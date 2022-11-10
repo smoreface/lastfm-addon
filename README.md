@@ -1,2 +1,2 @@
-# lastfm-addon
-A Last.fm add-on for Splunk
+# TA-lastfm
+TA-lastfm-add-on-for-splunk

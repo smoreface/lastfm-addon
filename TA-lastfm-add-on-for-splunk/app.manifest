@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "info": {
+    "title": "Lastfm add-on for Splunk",
+    "id": {
+      "group": null,
+      "name": "TA-lastfm-add-on-for-splunk",
+      "version": "2.0.0"
+    },
+    "author": [
+      {
+        "name": "Sarah Moir",
+        "email": null,
+        "company": null
+      }
+    ],
+    "releaseDate": null,
+    "description": "Rewriting the Last.fm add-on for Splunk in Python3 native format.",
+    "classification": {
+      "intendedAudience": null,
+      "categories": [],
+      "developmentStatus": null
+    },
+    "commonInformationModels": null,
+    "license": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "privacyPolicy": {
+      "name": null,
+      "text": null,
+      "uri": null
+    },
+    "releaseNotes": {
+      "name": null,
+      "text": null,
+      "uri": null
+    }
+  },
+  "dependencies": {
+  },
+  "tasks": [],
+  "inputGroups": {
+  },
+  "incompatibleApps": {
+  },
+  "platformRequirements": {
+    "splunk": {
+      "Enterprise": "*"
+    }
+  }
+}
