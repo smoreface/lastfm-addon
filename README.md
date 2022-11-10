@@ -47,9 +47,11 @@ This add-on contains the following:
 
 The modular input calls the Last.fm API endpoint [user.getRecentTracks](https://www.last.fm/api/show/user.getRecentTracks) endpoint every 90 seconds to retrieve the tracks most recently listened to by the configured username.
 
-While the endpoint response includes the "currently playing track with the nowplaying="true" attribute", the input trims that portion of the response before indexing the event.
+The interval is configurable, but I recommend 90 seconds as a frequency for avoiding duplicate events but still catching shorter songs such as [Norgaard](https://www.youtube.com/watch?v=8VI3q4T-1Jc) by the Vaccines.
 
-Each event is equivalent to one "scrobble", or listen event for a track.
+While the endpoint response includes the "currently playing track with the `nowplaying="true"` attribute", the input trims that portion of the response before indexing the event.
+
+Each Splunk event created by this input is equivalent to one "scrobble", or listen event for a track.
 
 ## Install this add-on
 
@@ -79,6 +81,8 @@ In Splunk Web, do the following:
 9. Leave the default **Checkpoint type** as **Auto**.
 10. Click **Add**.
 
+I have only used this to create one input for one username, but you could certainly collect data from multiple usernames and compare their listening activities. 
+
 ## Test this add-on
 
 To see whether or not this add-on is working, do the following:
@@ -90,4 +94,4 @@ If you want to use a dashboard that I built to see highlights from my recent Las
 
 ## Questions, suggestions, and more?
 
-Please open an issue in this GitHub repository.
+Please [open an issue](https://github.com/smoreface/lastfm-addon/issues/new/choose) in this GitHub repository.
